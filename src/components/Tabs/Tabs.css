@@ -20,13 +20,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
   background: #ffffff;
   box-sizing: border-box;
   flex: 1 0 auto;
   cursor: pointer;
   height: 100%;
   transition: all 0.5 ease-in-out;
-  text-transform: uppercase;
 }
 
 .tab:hover {
