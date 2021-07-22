@@ -2,6 +2,7 @@
 
 Aviasales test task for frontend devs. Recommended framework to perform this task is React.
 Anyone is allowed to use other tools for development. Hence, I also used Redux as a state management library.
+
 P.S. it could've been done by react's own state, but my main task was to dive deep into redux and get more experience with it.
 
 To run this project, install npm and npm start.
