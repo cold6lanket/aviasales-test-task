@@ -1,6 +1,7 @@
 # Test task found in internet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aviasales test task for frontend devs. Recommended framework to perform this task is React.
+
 To run this project, install npm and npm start.
 
 ## Available Scripts
