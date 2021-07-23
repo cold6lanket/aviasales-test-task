@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 
 import Spinner from '../Spinner/Spinner.jsx';
@@ -8,19 +8,28 @@ import { fetchData } from '../../services/index.js';
 
 import './Tickets.css';
 import Ticket from './Ticket/Ticket';
+import Error from '../Error/index.js';
 
 function Tickets({ tickets, loading, ticketLoaded}) {
+    
+    const [error, setError] = useState(false);
+
     useEffect(() => {
         const getData = async () => {
-            const data = await fetchData();
-            const filtered = data.filter(item => item.carrier === 'S7');
+            try {
+                const data = await fetchData();
+                const filtered = data.filter(item => item.carrier === 'S7');
 
-            return ticketLoaded(filtered);
+                return ticketLoaded(filtered);
+            } catch (error) {
+                setError(true);
+            }  
         };
 
         getData();
 
-    }, [ticketLoaded]);
+    }, [ticketLoaded, error]);
+
 
     if (loading) return <Spinner/>;
 
@@ -28,7 +37,7 @@ function Tickets({ tickets, loading, ticketLoaded}) {
 
     return (
         <>
-            {elements}
+            {error ? <Error /> : elements}
         </>
     );
 }
