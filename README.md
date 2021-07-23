@@ -25,4 +25,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 -   [ ] User can sort tickets by its price and flight time.
 
 ## Final result
-![aviasales-test-task](https://user-images.githubusercontent.com/72103819/126529457-6a528ffd-041d-4842-8ef1-2e00c0be2722.png)
+![aviasales_final](https://user-images.githubusercontent.com/72103819/126771118-1eafe725-4a93-4762-9c4d-a7730a0a6aef.png)
+
